@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+package-data = { "tkweb" = ["py.typed"] }
+packages = ["src"]
+
+[project]
+name = "tkweb"
+version = "0.0.1"
+authors = [
+  { name="Ben Klumski", email="b64964357@gmail.com" },
+]
+description = "Tkinter For the Web - A package that brings Tkinter to web browsers using JS and python-wasm."
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/ben-bit-code208/tkweb"
+Issues = "https://github.com/ben-bit-code208/tkweb/issues"
