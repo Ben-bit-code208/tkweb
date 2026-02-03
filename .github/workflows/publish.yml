@@ -10,12 +10,13 @@ jobs:
 
     steps:
       - name: Clean dist folder
-       run: rm -rf dist/*
+        run: rm -rf dist/*
+        continue-on-error: true
 
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-         ref: main
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,5 +40,6 @@ jobs:
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
           twine upload dist/*
+
 
 
