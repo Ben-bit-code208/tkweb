@@ -4,7 +4,7 @@ Drop-in Replacement für tkinter im Browser.
 Nutzt JavaScript DOM direkt über js.document
 
 Verwendung:
-    import tkinter_browser as tk
+    import tkinter_browseras tk
     
     root = tk.Tk()
     label = tk.Label(root, text="Hello!")
@@ -14,6 +14,13 @@ Verwendung:
 
 import js
 from pyodide.ffi import create_proxy
+import tkinter
+global Tk
+global Toplevel
+global Text
+global level
+global entery
+global *
 
 # Globale Container für Widgets
 _root_element = None

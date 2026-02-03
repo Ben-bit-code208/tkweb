@@ -8,11 +8,11 @@ packages = ["src"]
 
 [project]
 name = "tkweb"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="Ben Klumski", email="b64964357@gmail.com" },
 ]
-description = "Tkinter For the Web - A package that brings Tkinter to web browsers using JS and python-wasm."
+description = "tkweb For the Web - A package that brings tkweb to web browsers using JS and python-wasm."
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
