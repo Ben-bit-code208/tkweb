@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = [{include = "tkweb", from = "src"}]
+packages = ["src/tkweb"]
 package-data = { "tkweb" = ["py.typed"] }
 
 [project]
