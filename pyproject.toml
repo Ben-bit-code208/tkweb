@@ -4,7 +4,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/tkweb"]
-package-data = { "tkweb" = ["py.typed"] }
 
 [project]
 name = "tkweb"
