@@ -10,10 +10,10 @@ name: Upload Python Package
 
 on:
   release:
-    types: [published]
+  push:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   release-build:
@@ -74,3 +74,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/
+
+      - name:
+        run: "rm -rf /dist/"
+        
