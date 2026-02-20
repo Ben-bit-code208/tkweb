@@ -34,7 +34,6 @@ jobs:
 
       - name: build
         run:
-          cd /src/tkweb
           python -m build
 
       - name: Upload distributions
