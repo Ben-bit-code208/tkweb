@@ -1,5 +1,5 @@
-# src/tkweb/__init__.py
-from tkinter_browser import (
+# tkweb/__init__.py
+from src.tkweb.tkinter_browser import (
     Tk,
     Toplevel,
     Label,

@@ -7,7 +7,7 @@ packages = ["src/tkweb"]
 
 [project]
 name = "tkweb"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Ben Klumski", email="b64964357@gmail.com" },
 ]
